@@ -1,8 +1,6 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const utils = require("./utils");
-
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -10,7 +8,7 @@ const questions = [
     {
         type: "input",
         message: "What is the title of your project?",
-        name: "title",
+        name: "projectTitle",
     },
     {
         type: "input",
@@ -33,9 +31,10 @@ const questions = [
 
     },
     {
-        type: "input",
-        message: "what license is being used? (ie...MIT)",
-        name: "license",     
+        type: "checkbox",
+        message: "Please select a license to this project",
+        name: "license",
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD", "None"],
     },
     {
         type: "input",
@@ -66,10 +65,10 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(fileName, data) { 
     fs.writeFile(fileName, data, function(err) {
-        console.log(fileName)
-        console.log(data)
+        console.log(fileName);
+        console.log(data);
         if (err) {
             return console.log(err);
         } else {
@@ -80,11 +79,11 @@ function writeToFile(fileName, data) {
 
 
 // function to initialize program
-function init() {
-    inquirer.createPromptModule(questions)
+function init() { 
+    inquirer.createPromptModule(questions)  
     .then(function(data) {
         writeToFile("README.md", generateMarkdown(data));
-        console.log(data)
+        console.log(data);
     })
 }
 
