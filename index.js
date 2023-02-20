@@ -26,7 +26,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "What are the usage information?",
+        message: "What are the usage information? (i.e. Markdown, JavaScript, Node, JSON, etc)",
         name: "usage",
 
     },
@@ -38,8 +38,9 @@ const questions = [
     },
     {
         type: "input",
-        message: "Who contributed to this project?",
+        message: "Please List any contributors to this project? (use GitHub username)",
         name: "contribution",
+        default: "",
     },
     {
         type: "input",
@@ -48,13 +49,18 @@ const questions = [
     },
     {
         type: "input",
-        message: "Contact info for inquires.",
+        message: "Contact info for inquires. (i.e. 8.2.4 (or later))",
         name: "Questions",
     },
     {
         type: "input",
         message: "What is your GitHub username?",
         name: "username",
+    },
+    {
+        Type: "input",
+        message: "What is your name?",
+        name: "name",        
     },
     {
         type: "input",
