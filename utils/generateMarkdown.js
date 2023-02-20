@@ -6,14 +6,6 @@ function renderLicensebadg(license) {
   return "";
 }
 
-//Function that returns the license link
-function renderLicenseLink(license) {
-  if (license !== "none") {
-    return `\n* [license](#license)\n`;
-  }
-  return "";
-}
-
 // function to generate markdown for README
 function generateMarkdown(data) {
     return `

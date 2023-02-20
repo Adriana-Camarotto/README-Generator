@@ -15,12 +15,7 @@ const questions = [
         message: "What is the description of your project?",
         name: "description",
     },
-    {
-        type: "input",
-        message: "Tabel of Contentes?",
-        name: "tableOfContents",
-    },
-    {
+   {
         type: "input",
         message: "What are the installation instructions? (i.e. 8.2.4 (or later))",
         name: "installation",
@@ -29,7 +24,6 @@ const questions = [
         type: "input",
         message: "What are the usage information? (i.e. Markdown, JavaScript, Node, JSON, etc)",
         name: "usage",
-
     },
     {
         type: "checkbox",
