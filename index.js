@@ -67,9 +67,9 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) { 
+    //cwd is a method of global object process, returns a string value which is the current working directory of the Node.js process.
     return fs.writeFileSync(path.join(process.cwd(), fileName), data); 
 }
-
 
 // function to initialize program
 function init() { 

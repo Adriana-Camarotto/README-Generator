@@ -1,7 +1,7 @@
 //create a function that returns a license badge based on which license is passed in
-function renderLicensebadg(license) {
+function renderLicensebadge(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
   return "";
 }
@@ -11,7 +11,7 @@ function generateMarkdown(data) {
     return `
 # ✨ ${data.projectTitle}
 
-${renderLicensebadg(data.license)};
+${renderLicensebadge(data.license)};
 
 ## 💡 Description
 ${data.description}  
@@ -20,13 +20,13 @@ ${data.description}
 ---
 
 ## 🔎 Table of Contents
-* [Installation](##installation)
-* [Usage](##usage)
-* [License](##license)
-* [Contribution](##contribution)
-* [Tests Instructions](##testInstructions)
-* [Questions](##questions)
-* [Contact-me](##Contact)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution](#contribution)
+* [Test Instructions](#testInstructions)
+* [Questions](#questions)
+* [Contact-me](#Contact)
 ---
 
 ## 📌 Installation
@@ -44,7 +44,7 @@ In order to use this application, ${data.usage}
 ## 👉 License
 
 This application is covered under the ${data.license} license. \n
-${renderLicensebadg(data.license)}
+${renderLicensebadge(data.license)}
 
 
 
