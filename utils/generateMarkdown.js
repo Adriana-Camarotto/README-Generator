@@ -1,7 +1,6 @@
-function renderLicenseSection(license) {
+function renderLicensebadg(license) {
   if (license !== "none") {
-    returne `## License
-    This project is licensed under the $(license) license.`;
+    return `![Github license](https://img.shields.io/badge/license-${license}-pink.svg)`;
   }
   return "";
 }
@@ -18,15 +17,15 @@ function generateMarkdown(data) {
     return `
 # ✨ ${data.projectTitle}
 
-By ${data.name}
-${remderLicenseBadg(data.license)}
+
+${renderLicensebadg(data.license)}
 
 ## 💡 Description
 ${data.description}  
 
 
 ---
-
+node 
 ## 🔎 Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)

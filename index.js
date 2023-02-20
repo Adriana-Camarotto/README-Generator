@@ -18,6 +18,7 @@ const questions = [
     {
         type: "input",
         message: "Tabel of Contentes?",
+        name: "tableOfContents",
     },
     {
         type: "input",
@@ -72,25 +73,16 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) { 
-    fs.writeFile(fileName, data, function(err) {
-        console.log(fileName);
-        console.log(data);
-        if (err) {
-            return console.log(err);
-        } else {
-            console.log("Success!");
-        }
-    })
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data); 
 }
 
 
 // function to initialize program
 function init() { 
-    inquirer.createPromptModule(questions)  
-    .then(function(data) {
-        writeToFile("README.md", generateMarkdown(data));
-        console.log(data);
-    })
+    inquirer.prompt(questions).then((responses) => {
+        console.log("Creating your professional README.md file...");
+        writeToFile("README.md", generateMarkdown({ ...responses}));
+    });
 }
 
 // function call to initialize program
