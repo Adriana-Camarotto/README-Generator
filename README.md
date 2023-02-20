@@ -15,7 +15,6 @@ This application is covered under the MIT license.
 
 ###  https://opensource.org/licenses/MIT
 
-// user ypur terminal to gener
 ---
 
 ## 🔎 Table of Contents
@@ -36,7 +35,7 @@ The inquire, fs and utils dependencies must be installed to run the application.
 ---
 
 ## 📌 Usage
-In order to use this application, Answer all the  questions  using  your termninal  to  create an professional README to your repository.
+In order to use this application, Use your terminal to answer  the questions to create an proffessional readme.md
 
 ---
 
@@ -46,9 +45,7 @@ Contributors: N/A
 ---
 
 ## 🖥️ Test Instructions
-Follow the commands in your terminal to test this app: 
- 
-N/A
+n/a
 
 ---
 

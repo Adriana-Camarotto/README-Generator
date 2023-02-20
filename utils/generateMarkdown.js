@@ -65,7 +65,6 @@ This application is covered under the ${data.license} license. \n
 ###  ${renderLicenseBadge(data.license)} \n
 ###  ${renderLicenseLink(data.license)}
 
-// user ypur terminal to gener
 ---
 
 ## 🔎 Table of Contents
@@ -96,7 +95,6 @@ Contributors: ${data.contribution}
 ---
 
 ## 🖥️ Test Instructions
-Follow the commands in your terminal to test this app: \n 
 ${data.testInstructions}
 
 ---
