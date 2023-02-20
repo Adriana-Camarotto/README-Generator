@@ -29,7 +29,7 @@ const questions = [
         type: "checkbox",
         message: "Please choose the correspondent license to this project.",
         name: "license",
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0"],
+        choices: [`MIT`, `APACHE 2.0`, `GPL 3.0`, `None`],
     },
     {
         type: "input",
@@ -80,7 +80,6 @@ function writeToFile(fileName, data) {
         console.error(`Error writing to file ${fileName}: ${err}`);
     }       
 }
- 
 
 // function to initialize programa
 function init() { 

@@ -7,11 +7,11 @@ const index = require("../index.js");
 function renderLicenseBadge(license) {
   let badge = ``;
   if(license === `MIT`) {
-    badge = `![Github license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)` 
+    badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
   } else if (license === `APACHE 2.0`) {
-    badge = `![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)`
+    badge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
   } else if (license === `GPL 3.0`) {
-    badge = `![license: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg)`
+    badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
   } else { 
     badge = ``
    }
@@ -41,7 +41,7 @@ function renderLicenseSection(license) {
   if(license === `None`) {
     licenseSection = ``
   } else {
-    `licenseSection = ${license}`
+    licenseSection = `License: ${license}`
     
   }
   return licenseSection;
@@ -53,7 +53,7 @@ function generateMarkdown(data) {
     return `
 # ✨ ${data.projectTitle}
 
-## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)} \n
+### ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)} \n
 ### ${renderLicenseLink(data.license)}
 
 
@@ -106,10 +106,8 @@ The following commands in your terminal to test this app: \n ${data.testInstruct
 ---
 
 ## ❓Questions
-If  you have any questions about this repo, you may contact me \n
-Github: hhtps://github.com/${data.username} \n
-Email: ${data.email}
-
+If  you have any questions about this repo, you may send me an issue \n
+Github: https://github.com/${data.username} \n
 
 ---
 

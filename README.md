@@ -1,7 +1,7 @@
 
-# ✨ a
+# ✨ a#a
 
-##   
+### License: GPL 3.0  
 
 ### 
 
@@ -46,7 +46,7 @@ This application is covered under the GPL 3.0 license.
 ---
 
 ## 🙌🏻 Contribution
-Contributors: a
+Contributors: 
 
 ---
 
@@ -57,11 +57,9 @@ The following commands in your terminal to test this app:
 ---
 
 ## ❓Questions
-If  you have any questions about this repo, you may contact me 
+If  you have any questions about this repo, you may send me an issue 
 
-Github: hhtps://github.com/a 
-
-Email: a
+Github: https://github.com/a 
 
 
 ---
