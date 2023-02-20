@@ -1,15 +1,21 @@
 
-# ✨ a#a
-
-### License: GPL 3.0  
-
-### 
-
+# ✨ README-Generator
 
 ## 💡 Description
-a  
+This is a README generator that can quickly be used to create a professional README for a new project.  
+
+---
+
+## 👉 License
+
+This application is covered under the MIT license. 
 
 
+###  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
+###  https://opensource.org/licenses/MIT
+
+// user ypur terminal to gener
 ---
 
 ## 🔎 Table of Contents
@@ -30,41 +36,31 @@ The inquire, fs and utils dependencies must be installed to run the application.
 ---
 
 ## 📌 Usage
-In order to use this application, a
-
-
----
-
-## 👉 License
-
-This application is covered under the GPL 3.0 license. 
-
-## 
-
-
+In order to use this application, Answer all the  questions  using  your termninal  to  create an professional README to your repository.
 
 ---
 
 ## 🙌🏻 Contribution
-Contributors: 
+Contributors: N/A
 
 ---
 
 ## 🖥️ Test Instructions
-The following commands in your terminal to test this app: 
- a
+Follow the commands in your terminal to test this app: 
+ 
+N/A
 
 ---
 
 ## ❓Questions
 If  you have any questions about this repo, you may send me an issue 
 
-Github: https://github.com/a 
+Github: https://github.com/Adriana-Camarotto 
 
 
 ---
 
 ## 📧 Contact-me
-a 
+Adriana Camarotto 
 
-a
+adriana.camarotto@gmail.com
