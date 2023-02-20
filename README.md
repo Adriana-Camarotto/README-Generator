@@ -1,24 +1,23 @@
 
-# ✨ a
+# ✨ d
 
 
-![Github license](https://img.shields.io/badge/license-MIT,APACHE 2.0,GPL 3.0,BSD,None-pink.svg)
+![Github license](https://img.shields.io/badge/license-4 - BSD-yellowgreen.svg)
 
 ## 💡 Description
-a  
+d  
 
 
 ---
 node 
 ## 🔎 Table of Contents
 * [Installation](#installation)
-* [Usage](#usage)
+* [Usage](#sage)
 * [License](#license)
-$(renderLicenseLink(data.license))
 * [Contribution](#contribution)
-* [Tests](#testInstructions)
+* [Tests Instructions](#testInstructions)
 * [Questions](#questions)
-* [Contact](#contact)
+* [Contact-me](#Contact)
 
 ---
 
@@ -35,8 +34,10 @@ In order to use this application, undefined
 ---
 
 ## 👉 License
-This project is licensed under the MIT,APACHE 2.0,GPL 3.0,BSD,None license.
-![GitHub: license:] (https://img.shields.io/badge/license-MIT-yellow.svg)
+## License
+     Licensed under the 4 - BSD license.;
+
+
 
 ---
 
@@ -51,11 +52,11 @@ The following test instructions must be completed to run the application: undefi
 ---
 
 ## ❓Questions
-If  you have any questions about this repo, open an issue or contact me at a.
+If  you have any questions about this repo, open an issue or contact me at aa.
 
 
 ---
 
 ## 📧 Contact-me
 a
-a
+aa

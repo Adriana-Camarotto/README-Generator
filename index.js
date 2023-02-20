@@ -22,7 +22,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "What are the installation instructions?",
+        message: "What are the installation instructions? (i.e. 8.2.4 (or later))",
         name: "installation",
     },
     {
@@ -33,9 +33,9 @@ const questions = [
     },
     {
         type: "checkbox",
-        message: "Please select a license to this project",
+        message: "Please type the number correspondent to this project`s license.",
         name: "license",
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD", "None"],
+        choices: ["1 - MIT", "2 - APACHE 2.0", "3 - GPL 3.0", "4 - BSD", "5 - None"],
     },
     {
         type: "input",
@@ -50,8 +50,8 @@ const questions = [
     },
     {
         type: "input",
-        message: "Contact info for inquires. (i.e. 8.2.4 (or later))",
-        name: "Questions",
+        message: "Contact info for inquires.",
+        name: "questions",
     },
     {
         type: "input",

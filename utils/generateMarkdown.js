@@ -1,13 +1,24 @@
+//create a function that returns a license badge based on which license is passed in
 function renderLicensebadg(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-pink.svg)`;
+    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`;
   }
   return "";
 }
 
-function renderlicenseLink(license) {
+//Function that returns the license link
+function renderLicenseLink(license) {
   if (license !== "none") {
-    return `n\* [License](#license)\n`;
+    return `https://opensource.org/licenses/`;
+  }
+  return "";
+}
+
+// returns the license section of README
+function renderLicenseSection(license) {
+  if (license!== "none") {
+    return `## License
+     Licensed under the ${license} license.`;
   }
   return "";
 }
@@ -28,13 +39,12 @@ ${data.description}
 node 
 ## 🔎 Table of Contents
 * [Installation](#installation)
-* [Usage](#usage)
+* [Usage](#sage)
 * [License](#license)
-$(renderLicenseLink(data.license))
 * [Contribution](#contribution)
-* [Tests](#testInstructions)
+* [Tests Instructions](#testInstructions)
 * [Questions](#questions)
-* [Contact](#contact)
+* [Contact-me](#Contact)
 
 ---
 
@@ -51,8 +61,9 @@ In order to use this application, ${data.Usage}
 ---
 
 ## 👉 License
-This project is licensed under the ${data.license} license.
-![GitHub: license:] (https://img.shields.io/badge/license-MIT-yellow.svg)
+${renderLicenseSection(data.license)};
+
+
 
 ---
 
