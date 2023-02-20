@@ -1,7 +1,7 @@
 //create a function that returns a license badge based on which license is passed in
 function renderLicensebadg(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`
   }
   return "";
 }
@@ -19,19 +19,17 @@ function generateMarkdown(data) {
     return `
 # ✨ ${data.projectTitle}
 
-
 ${renderLicensebadg(data.license)};
-
 
 ## 💡 Description
 ${data.description}  
 
 
 ---
-node 
+
 ## 🔎 Table of Contents
 * [Installation](##installation)
-* [Usage](##sage)
+* [Usage](##usage)
 * [License](##license)
 * [Contribution](##contribution)
 * [Tests Instructions](##testInstructions)
@@ -52,7 +50,9 @@ In order to use this application, ${data.usage}
 ---
 
 ## 👉 License
-${renderLicenseLink(data.license)};
+
+This application is covered under the ${data.license} license. \n
+${renderLicensebadg(data.license)}
 
 
 
@@ -64,18 +64,18 @@ Contributors: ${data.contribution}
 ---
 
 ## 🖥️ Test Instructions
-The following test instructions must be completed to run the application: ${data.testInstructions}
+The following test instructions must be completed to run the application: \n ${data.testInstructions}
 
 ---
 
 ## ❓Questions
-If  you have any questions about this repo, open an issue or contact me at ${data.email}.
+If  you have any questions about this repo, open an issue or send me an email.
 
 
 ---
 
 ## 📧 Contact-me
-${data.name}
+${data.name} \n
 ${data.email}
 `;
   }

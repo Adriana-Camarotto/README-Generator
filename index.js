@@ -33,9 +33,9 @@ const questions = [
     },
     {
         type: "checkbox",
-        message: "Please type the number correspondent to this project`s license.",
+        message: "Please choose the correspondent license to this project.",
         name: "license",
-        choices: ["1 - MIT", "2 - APACHE 2.0", "3 - GPL 3.0", "4 - BSD", "5 - None"],
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD", "none"],
     },
     {
         type: "input",
