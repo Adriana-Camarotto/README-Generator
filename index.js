@@ -29,13 +29,13 @@ const questions = [
         type: "checkbox",
         message: "Please choose the correspondent license to this project.",
         name: "license",
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD", "none"],
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0"],
     },
     {
         type: "input",
         message: "Please List any contributors to this project? (use GitHub username)",
         name: "contribution",
-        default: "",
+        default: "", 
     },
     {
         type: "input",
@@ -53,7 +53,7 @@ const questions = [
         name: "username",
     },
     {
-        Type: "input",
+        type: "input",
         message: "What is your name?",
         name: "name",        
     },
@@ -68,16 +68,32 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) { 
     //cwd is a method of global object process, returns a string value which is the current working directory of the Node.js process.
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data); 
+    try {
+        fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
+            if (err) {
+                console.error(`Error writing to file ${fileName}: ${err}`);
+            } else {
+                console.log(`File ${fileName} created!`);
+            }
+        });     
+    } catch (err) {
+        console.error(`Error writing to file ${fileName}: ${err}`);
+    }       
 }
+ 
 
-// function to initialize program
+// function to initialize programa
 function init() { 
-    inquirer.prompt(questions).then((responses) => {
+    inquirer.prompt(questions).then((data) => {
         console.log("Creating your professional README.md file...");
-        writeToFile("README.md", generateMarkdown({ ...responses}));
+        console.log(data);
+        writeToFile("README.md", generateMarkdown(data));
     });
 }
 
-// function call to initialize program
+// function call to initialize application
 init();
+
+ //exports
+ module.exports = questions;
+  
