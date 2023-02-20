@@ -1,7 +1,7 @@
 //create a function that returns a license badge based on which license is passed in
 function renderLicensebadg(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`;
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
   return "";
 }
@@ -9,16 +9,7 @@ function renderLicensebadg(license) {
 //Function that returns the license link
 function renderLicenseLink(license) {
   if (license !== "none") {
-    return `https://opensource.org/licenses/`;
-  }
-  return "";
-}
-
-// returns the license section of README
-function renderLicenseSection(license) {
-  if (license!== "none") {
-    return `## License
-     Licensed under the ${license} license.`;
+    return `\n* [license](#license)\n`;
   }
   return "";
 }
@@ -29,7 +20,8 @@ function generateMarkdown(data) {
 # ✨ ${data.projectTitle}
 
 
-${renderLicensebadg(data.license)}
+${renderLicensebadg(data.license)};
+
 
 ## 💡 Description
 ${data.description}  
@@ -38,14 +30,13 @@ ${data.description}
 ---
 node 
 ## 🔎 Table of Contents
-* [Installation](#installation)
-* [Usage](#sage)
-* [License](#license)
-* [Contribution](#contribution)
-* [Tests Instructions](#testInstructions)
-* [Questions](#questions)
-* [Contact-me](#Contact)
-
+* [Installation](##installation)
+* [Usage](##sage)
+* [License](##license)
+* [Contribution](##contribution)
+* [Tests Instructions](##testInstructions)
+* [Questions](##questions)
+* [Contact-me](##Contact)
 ---
 
 ## 📌 Installation
@@ -55,25 +46,25 @@ The inquire, fs and utils dependencies must be installed to run the application.
 ---
 
 ## 📌 Usage
-In order to use this application, ${data.Usage}
+In order to use this application, ${data.usage}
 
 
 ---
 
 ## 👉 License
-${renderLicenseSection(data.license)};
+${renderLicenseLink(data.license)};
 
 
 
 ---
 
 ## 🙌🏻 Contribution
-Contributors: ${data.Contribution}
+Contributors: ${data.contribution}
 
 ---
 
 ## 🖥️ Test Instructions
-The following test instructions must be completed to run the application: ${data.TestInstructions}
+The following test instructions must be completed to run the application: ${data.testInstructions}
 
 ---
 
