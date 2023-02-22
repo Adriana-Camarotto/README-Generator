@@ -37,7 +37,8 @@ This application is covered under the MIT license.
 
 ---
 
-## 📌 Installation Inquirer package required to run this application
+## 📌 Installation 
+Inquirer package required to run this application
 The inquire, fs and utils dependencies must be installed to run the application.
 
 
