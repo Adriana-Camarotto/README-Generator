@@ -10,7 +10,7 @@ This is a README generator that can quickly be used to create a professional REA
 
 A walkthrough video demonstrating the functionality of the application.
 
-![preview](./Assets/README-Generator Adriana Camarotto.mp4)
+![preview](./assets/README-Generator Adriana Camarotto.mp4)
 
 ---
 
