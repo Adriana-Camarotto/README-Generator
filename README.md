@@ -6,6 +6,14 @@ This is a README generator that can quickly be used to create a professional REA
 
 ---
 
+## DEMO
+
+A walkthrough video demonstrating the functionality of the application.
+
+![preview](./Assets/README-Generator Adriana Camarotto.mp4)
+
+---
+
 ## 👉 License
 
 This application is covered under the MIT license. 
@@ -18,34 +26,35 @@ This application is covered under the MIT license.
 ---
 
 ## 🔎 Table of Contents
-### * [Description](#description)
-### * [Installation](#installation)
-### * [Usage](#usage)
-### * [License](#license)
-### * [Contribution](#contribution)
-### * [Test Instructions](#testInstructions)
-### * [Questions](#questions)
-### * [Contact-me](#Contact)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribution](#contribution)
+- [Test Instructions](#testInstructions)
+- [Questions](#questions)
+- [Contact-me](#Contact)
+
 ---
 
-## 📌 Installation
+## 📌 Installation Inquirer package required to run this application
 The inquire, fs and utils dependencies must be installed to run the application.
 
 
 ---
 
 ## 📌 Usage
-In order to use this application, Use your terminal to answer  the questions to create an proffessional readme.md
+In order to use this application, Use it to create a professional README.md to your repo. Use command line to run To run this app run the command: node index.js
 
 ---
 
 ## 🙌🏻 Contribution
-Contributors: N/A
+Contributors: Adriana Camarotto
 
 ---
 
 ## 🖥️ Test Instructions
-n/a
+To test it please run the command: node index.js
 
 ---
 

@@ -1,7 +1,3 @@
-const fs = require("fs");
-const inquirer = require('inquirer');
-const index = require("../index.js");
-
 //Function that returns a license badge based on which license is passed in
 //if there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -58,6 +54,14 @@ ${data.description}
 
 ---
 
+## DEMO
+
+A walkthrough video demonstrating the functionality of the application.
+
+![preview](./Assets/README-Generator Adriana Camarotto.mp4)
+
+---
+
 ## 👉 License
 
 This application is covered under the ${data.license} license. \n
@@ -68,17 +72,18 @@ This application is covered under the ${data.license} license. \n
 ---
 
 ## 🔎 Table of Contents
-### * [Description](#description)
-### * [Installation](#installation)
-### * [Usage](#usage)
-### * [License](#license)
-### * [Contribution](#contribution)
-### * [Test Instructions](#testInstructions)
-### * [Questions](#questions)
-### * [Contact-me](#Contact)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribution](#contribution)
+- [Test Instructions](#testInstructions)
+- [Questions](#questions)
+- [Contact-me](#Contact)
+
 ---
 
-## 📌 Installation
+## 📌 Installation ${data.installation}
 The inquire, fs and utils dependencies must be installed to run the application.
 
 
@@ -106,11 +111,14 @@ Github: https://github.com/${data.username} \n
 ---
 
 ## 📧 Contact-me
-${data.name} \n
-${data.email}
+- Name: ${data.name} \n
+- Email: ${data.email}
+-Project URL: ${data.url}
 `;
   };
  
   //exports
   module.exports = generateMarkdown;
   
+
+ 

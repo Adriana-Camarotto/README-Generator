@@ -17,12 +17,12 @@ const questions = [
     },
    {
         type: "input",
-        message: "What are the installation instructions? (i.e. 8.2.4 (or later))",
+        message: "What are the installation instructions?",
         name: "installation",
     },
     {
         type: "input",
-        message: "What are the usage information? (i.e. Markdown, JavaScript, Node, JSON, etc)",
+        message: "What are the usage information?",
         name: "usage",
     },
     {
@@ -57,6 +57,11 @@ const questions = [
         message: "What is your email address?",
         name: "email",    
     },
+    {
+        type: "input",
+        message: "What is the project URL"
+        name: "url"
+    }
 
 ];
 
