@@ -6,14 +6,6 @@ This is a README generator that can quickly be used to create a professional REA
 
 ---
 
-## DEMO
-
-A walkthrough video demonstrating the functionality of the application.
-
-[![preview](./assets/README-Generator Adriana Camarotto.mp4)]
-
----
-
 ## 👉 License
 
 This application is covered under the MIT license. 
